@@ -1,9 +1,7 @@
-// ignore_for_file: prefer_const_constructors, file_names
+// ignore_for_file: prefer_const_constructors, file_names, sized_box_for_whitespace
 import 'dart:async';
-
-import 'package:alpha/screens/LoginScreen.dart';
+import 'package:alpha/screens/news.dart';
 import 'package:flutter/material.dart';
-import 'package:lottie/lottie.dart';
 
 class SplashScreen extends StatefulWidget {
   const SplashScreen({Key? key}) : super(key: key);
@@ -17,10 +15,10 @@ class _SplashScreenState extends State<SplashScreen> {
   void initState() {
     super.initState();
 
-    Timer(Duration(seconds: 1000000), () {
+    Timer(Duration(seconds: 3), () {
       Navigator.of(context).pushReplacement(
         MaterialPageRoute(
-          builder: (context) => LoginScreen(),
+          builder: (context) => NewsPage(),
         ),
       );
     });
@@ -29,11 +27,29 @@ class _SplashScreenState extends State<SplashScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.blueGrey,
+      backgroundColor: Colors.white,
       body: Column(
         mainAxisAlignment: MainAxisAlignment.center,
-        children: [
-          LottieBuilder.asset('assets/Splash.json', repeat: true),
+        children: const [
+          Expanded(
+            child: SizedBox(
+              // color: Colors.green,
+              width: double.maxFinite,
+              height: 200,
+              child: Image(
+                image: AssetImage('assets/social.png'),
+              ),
+            ),
+          ),
+          SizedBox(
+            height: 20,
+          ),
+          CircularProgressIndicator(),
+
+          SizedBox(
+            height: 20,
+          ),
+          // LottieBuilder.asset('assets/share.json', repeat: true),
         ],
       ),
     );

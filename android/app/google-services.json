@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "603190351164",
+    "project_id": "coin-e80fb",
+    "storage_bucket": "coin-e80fb.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:603190351164:android:358a6c277caf0d75dc7a39",
+        "android_client_info": {
+          "package_name": "com.example.alpha"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "603190351164-73vr2vc2kantdub3cf09f0su73blk8ti.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.alpha",
+            "certificate_hash": "aee79ba95028c076d0e1241bfb27e10a9d388d09"
+          }
+        },
+        {
+          "client_id": "603190351164-hc7np9ldd4qr1bokhgd0av62rvaqr6t6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCgBkzO69CoiYpcK5ExDNaerD5y56L4gy4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "603190351164-hc7np9ldd4qr1bokhgd0av62rvaqr6t6.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
